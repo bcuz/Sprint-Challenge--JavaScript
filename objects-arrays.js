@@ -97,6 +97,7 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 
+// using the universities array made in Request 1.
 for (const university of universities) {
   if (university.includes("Uni")) {
     uni.push(university)
@@ -104,6 +105,9 @@ for (const university of universities) {
 }
 console.log(uni.length);
 console.log(uni);
+
+// let test = universities.filter(item => item.toLowerCase().includes("uni"))
+// console.log(`bob ${test.length}`);
 
 
 // ==== ADVANCED Array Methods ====
